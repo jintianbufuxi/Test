@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" >
+        <title>首页（尤隆基)</title>
+        <link rel="short icon" href="img/icon.png">
+        <link rel="stylesheet" href="1.css">
+    </head>
+    <body>
+    <!--<语义化标签：增强代码的可读性-->
+        <header>
+            <span>小滴服务</span>
+        </header>
+        <section class="DS_second_section">
+            <!--alt:显示警告内容-->
+            <img id="bannerImg" src="img/banner-1.png" alt="加载失败，请检查网络！">
+            <script>
+                var imgNumber=1;
+                var bannerImg=document.getElementById("bannerImg");
+                function changeImg() {
+                    imgNumber++;
+                    if(imgNumber>3){
+                        imgNumber=1;
+                    }
+                    bannerImg.src="img/banner-"+imgNumber+".png";
+                }
+                setInterval(changeImg(),3000);
+            </script>
+        </section>
+        <!--<-->
+        <section>
+            <ul>
+                <li>
+                    <img src="img/index1.png" alt="">
+                    <span>企业项目</span>
+                </li>
+                <li>
+                    <img src="img/index2.png" alt="">
+                    <span>平台风采</span>
+                </li>
+                <li>
+                    <img src="img/index3.png" alt="">
+                    <span>报名流程</span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="img/index4.png" alt="">
+                    <span>客户流程</span>
+                </li>
+                <li>
+                    <img src="img/index5.png" alt="">
+                    <span>账务管理</span>
+                </li>
+                <li>
+                    <img src="img/index6.png" alt="">
+                    <span>新闻公告</span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="img/index7.png" alt="">
+                    <span>工程案例</span>
+                </li>
+                <li>
+                    <img src="img/index8.png" alt="">
+                    <span>修改密码</span>
+                </li>
+                <li>
+                    <img src="img/index9.png" alt="">
+                    <span>会员注册</span>
+                </li>
+            </ul>
+        </section>
+        <!--《-->
+        <footer>
+            <a href="Demo01.html"><img src="img/nav11.png"><span style="color: red">小滴服务</span></a>
+            <a href="Demo021.html"><img src="img/nav20.png"><span>企业项目</span></a>
+            <a href="Demo03.html"><img src="img/nav30.png"><span>服务流程</span></a>
+            <a href="Demo04.html"><img src="img/nav40.png"><span>平台风采</span></a>
+            <a href="Demo05.html"><img src="img/nav50.png"><span>我的小滴</span></a>
+        </footer>
+    </body>
+</html>
